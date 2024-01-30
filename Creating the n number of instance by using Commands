@@ -1,0 +1,2 @@
+aws ec2 run-instances --image-id ami-03f4878755434977f
+ --count 1 --instance-type t2.micro --key-name  youtube--security-group-ids sg-095ca35a6efa58e9d --subnet-id subnet-0e5494b5776860bdb
