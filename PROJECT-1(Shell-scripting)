@@ -1,0 +1,29 @@
+!#/bin/bash
+
+# This script is resources of the aws report usage
+
+
+# resources used to track
+# aws S3
+# aws EC2
+# aws IAM Users
+
+Set -x
+
+# list s3 buckets
+
+echo "print the list of s3 buckets"
+
+aws s3 ls
+
+# list ec2 instance
+
+echo "print the list of ec2 instances"
+
+aws ec2 describe-instances
+
+# list iam Users
+
+echo "print the list of IAM Users"
+
+aws iam list-users
